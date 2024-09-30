@@ -3,8 +3,6 @@
 
 using namespace std;
 
-const int MAX_TASKS = 100;
-
 struct Task {
     string title;
     string description;
@@ -12,9 +10,6 @@ struct Task {
 
     Task *next;
 };
-
-Task kanbanBoard[MAX_TASKS]; 
-int taskCount = 0; 
 
 Task *head, *tail, *current, *newNode, *del;
 
